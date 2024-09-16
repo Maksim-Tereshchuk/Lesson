@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../test"
+	},
+	{
+		"path": "../../background-animation-website"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "background-animation-website"
+  }
+}

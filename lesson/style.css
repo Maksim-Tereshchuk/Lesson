@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+body {
+}
+.header {
+  background: url(/lesson/img/article.qodef-e.png) no-repeat;
+  min-height: 1000px;
+}
+
+.container {
+  max-width: 1800px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.header__menu {
+}
+.header__list {
+}
+.header__item a {
+  font-size: 22px;
+  color: aliceblue;
+  text-transform: lowercase;
+}
+.header__logo {
+}
+.header__user {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+/* ======================================== */

@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #ffe2b0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__img {
+  margin-bottom: 20px;
+}
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 100px;
+}
+.header__list a {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* =============== */
+.top {
+  height: 640px;
+  background-image: url(./img/01-Картинка-фона.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.top__wrapper {
+  width: 490px;
+  height: 190px;
+  background: linear-gradient(
+    180deg,
+    rgba(244, 213, 178, 0.8) 0%,
+    rgba(234, 156, 65, 0.8) 100%
+  );
+  position: absolute;
+  top: 349px;
+  left: 1030px;
+  text-align: center;
+  padding-top: 15px;
+}
+.top__border {
+  border: 1px solid black;
+  width: 440px;
+  height: 160px;
+  margin: 0 auto;
+  padding: 17px 0 0 28px;
+  text-align: left;
+}
+.top__border h2 {
+  font-size: 32px;
+  margin: 0;
+}
+.top__border p {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+/* ===== */
+.awards {
+  padding-top: 40px;
+}
+.awards-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.awards-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.awards-title h2 {
+  font-size: 92px;
+  margin-bottom: 20px;
+}
+.awards-title span {
+  color: red;
+}
+.awards-title p {
+  text-align: left;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+.awards-btn {
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+}
+/* =================================== */
+.map-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* ================= */
+
+.footer-nav {
+  margin-bottom: 30px;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 100px;
+}
+.footer-list a {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}

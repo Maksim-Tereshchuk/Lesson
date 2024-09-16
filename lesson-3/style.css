@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+p {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Nunito Sans";
+}
+@font-face {
+  font-family: "Motter Corpus Std";
+  src: url(./font/Motter\ Corpus\ Std\ Regular.otf);
+}
+:root {
+  --header-green: #0b4141;
+  --button-pink: #ffccbc;
+}
+body {
+  font-family: "Nunito Sans";
+}
+/* =======================START HEADER========================= */
+.header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(18px);
+  z-index: 1000;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-family: "Motter Corpus Std";
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--header-green);
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.header__list {
+  display: flex;
+  gap: 24px;
+}
+/* ======================PINK LINE======================= */
+.header__list-item a {
+  color: var(--header-green);
+  font-weight: 600;
+  position: relative;
+}
+.header__a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--button-pink);
+  transition: all 0.3s ease;
+}
+.header__a:hover::after {
+  width: 100%;
+}
+/* =====================END===================== */
+.header__download {
+  padding: 12px 43.5px;
+  background-color: var(--header-green);
+  border-radius: 45px;
+  border: none;
+  color: var(--button-pink);
+  font-size: 16px;
+  cursor: pointer;
+}
+[class*="__container"] {
+  max-width: 88%;
+  margin: 0 auto;
+}
+/* =====================END======================= */
+
+main {
+  padding-top: 83px;
+}
+/* =====================HORS========================= */
+.hero {
+  padding: 120px 0 290px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__title {
+  font-family: "Motter Corpus Std";
+  font-size: 120px;
+  color: var(--button-pink);
+}
+.black {
+  background: linear-gradient(180deg, #0b4141 55%, #0b1f1f 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 99;
+  position: relative;
+}
+.hero img {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+.hero img:nth-child(2) {
+  bottom: 0px;
+}
+.hero img:nth-child(3) {
+  top: 100px;
+  left: 0;
+}
+/* ========================END============================= */
+/* ========================Discover======================== */
+.discover {
+  background-color: var(--button-pink);
+  padding: 196px 0 355px;
+  position: relative;
+  overflow: hidden;
+  color: aliceblue;
+}
+.discover__container {
+  display: flex;
+  justify-content: center;
+}
+.discover__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.discover__title {
+  font-size: 96px;
+  line-height: 96px;
+  font-family: "Motter Corpus Std";
+}
+.discover__desc {
+  max-width: 80%;
+}
+.discover img {
+  position: absolute;
+  top: -200px;
+}
+/* ====================END======================= */
+/* =====================Destiny========================== */
+.destiny__title {
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 72px;
+}
+
+.destiny {
+  background-color: var(--header-green);
+  padding: 118px 0 85px;
+  position: relative;
+  overflow: hidden;
+  color: var(--button-pink);
+}
+
+.destiny__content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+}
+.destiny__text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.destiny img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.destiny__desc {
+  max-width: 525px;
+}
+.destiny__link {
+  font-size: 18px;
+  padding: 14.5px 31px;
+  color: var(--button-pink);
+  border: 2px solid var(--button-pink);
+  border-radius: 100px;
+  font-weight: 600;
+}
+/* ====================END======================= */
+/* =====================Costomize=========================== */
+.costomize {
+  padding: 96px 0;
+}
+.costomize__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+
+  gap: 48px;
+}
+.costomize__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+.costomize__content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.costomize__text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 400px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.costomize__title {
+  color: var(--header-green);
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+.costomize__title.pink {
+  color: var(--button-pink);
+}
+
+.costomize__desc {
+  color: var(--header-green);
+}
+.costomize__scroll {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.costomize__scroll {
+  color: var(--header-green);
+  font-weight: 500;
+}
+
+.costomize__scroll img {
+  transition: 0.3s;
+}
+
+.costomize__scroll:hover img {
+  transform: translateY(-5px);
+}
+
+.costomize img:nth-child(2) {
+  justify-self: end;
+}
+/* ===================END====================== */
+/* ====================MAGIC=========================== */
+.magic {
+  background-color: rgb(245, 245, 245, 0.6);
+  padding: 117px 0 400px;
+  position: relative;
+  overflow: hidden;
+}
+.magic__container {
+}
+.magic__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+}
+.magic__title {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 96px;
+  color: var(--button-pink);
+  font-family: "Motter Corpus Std";
+}
+.magic__desc {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--header-green);
+}
+.magic img {
+  position: absolute;
+  width: 100%;
+  bottom: -8px;
+}
+/* ===================END===================== */
+/* ========================Reviwes========================= */
+.reviwes {
+  padding: 64px 0 230px;
+  position: relative;
+  overflow: hidden;
+}
+.reviwes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.reviwes__title {
+  color: #fff;
+  font-size: 68px;
+  line-height: 72px;
+  font-weight: 900;
+}
+.reviwes__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 75.7%;
+  z-index: 1000;
+}
+.reviwes__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.reviwes__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20xp;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.623);
+  backdrop-filter: blur(9px);
+  color: var(--header-green);
+}
+.reviwes__text {
+  font-size: 14px;
+  padding: 7px;
+}
+.reviwes__proofile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviwes__proofile img {
+  /* width: 48px; */
+  padding: 12px;
+}
+
+.reviwes__proofile span {
+  font-size: 13px;
+}
+.reviwes > img {
+  position: absolute;
+
+  width: 100%;
+}
+.reviwes > img:nth-child(2) {
+  top: -100px;
+  z-index: -100;
+}
+.reviwes > img:nth-child(3) {
+  top: 300px;
+  z-index: 999;
+}
+/* =========================END======================= */
+/* =========================Circles========================= */
+.circles {
+  padding: 16px 0 194px;
+  position: relative;
+  overflow: hidden;
+}
+
+.circles__container {
+  display: flex;
+  gap: 166px;
+  max-width: 1200px;
+}
+
+.circles__content {
+  margin: 134px 0 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.circles__text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: var(--primary-green);
+}
+
+.circles__title {
+  font-size: 68px;
+  line-height: 72px;
+  font-weight: 900;
+  color: var(--header-green);
+}
+
+.circles__desc {
+  color: var(--header-green);
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 500px;
+}
+
+.circles__link {
+  padding: 14.5px 39px;
+  border: 2px solid var(--header-green);
+  color: currentColor;
+  font-size: 18px;
+  border-radius: 100px;
+  font-weight: 700;
+  color: var(--header-green);
+}
+
+.circles img:nth-child(2) {
+  position: absolute;
+  z-index: -1;
+}
+/* =========================END======================= */
+/* ======================Appstore==========================*/
+.appstore {
+  padding: 150px 0 93px;
+  position: relative;
+  overflow: hidden;
+}
+.appstore__container {
+  max-width: 1200px;
+}
+.appstore__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 37.2%;
+}
+.appstore__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.appstore__text {
+  display: flex;
+  flex-direction: column;
+  grid: 32px;
+  color: var(--header-green);
+}
+.appstore__title {
+  font-size: 68px;
+  line-height: 72px;
+  font-weight: 900;
+  text-align: center;
+  width: 500px;
+}
+.appstore__desc {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 20px 0 30px;
+}
+.appstore__link {
+  border: 2px solid var(--header-green);
+  width: 230px;
+  height: 54px;
+  font-size: 18px;
+  border-radius: 100px;
+  font-weight: 700;
+  color: var(--header-green);
+  padding: 14.5px 29px;
+}
+.appstore > img {
+  position: absolute;
+}
+.appstore > img:nth-child(2) {
+  right: 200px;
+  bottom: -10px;
+  z-index: 9;
+}
+.appstore > img:nth-child(3) {
+  width: 2451px;
+  right: -996px;
+  bottom: 0px;
+}
+/* =============================END==================================== */
+
+.Download {
+  padding: 120px 160px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--header-green);
+}
+.Download__container {
+  max-width: 1200px;
+}
+.Download__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.Download__title {
+  font-size: 80px;
+  list-style: 96px;
+  font-weight: 400;
+  font-family: "Motter Corpus Std";
+  color: var(--button-pink);
+  text-align: center;
+}
+.Download__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 45px;
+  gap: 30px;
+}
+.Download__content a {
+  color: var(--button-pink);
+  padding: 21px 50px;
+  display: flex;
+  gap: 20px;
+}
+.Download__content-a {
+  border: 2px solid var(--button-pink);
+  border-radius: 45px;
+}
+.Download__down {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 96px;
+  color: var(--button-pink);
+  gap: 10px;
+}
+.Download__down-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Motter Corpus Std";
+}
+.Download__down-desc {
+  font-size: 16px;
+  line-height: 21px;
+}
